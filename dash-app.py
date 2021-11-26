@@ -6,8 +6,6 @@ from dash import html
 from dash.dependencies import Input, Output
 import plotly.express as px
 
-os.chdir('E:\Python_teaching\ABDA\Classroom_guide\Plotly-Dash\class_example')
-
 data = pd.read_csv('accident_merge_casuality.csv')
 data_for_graph = data[['accident_index', 'date', 'light_conditions']]
 
